@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "gras"
+version = "0.1.0"
+description = "Github Repository Activity Scanning (GRAS)."
+authors = ["Mathias V. Nielsen <1547127+math280h@users.noreply.github.com>"]
+license = "Apache-2.0 license"
+readme = "README.md"
+
+    [tool.poetry.dependencies]
+    python = "^3.10"
+    rich = "^13.3.3"
+    pygithub = "^1.58.1"
+    python-dotenv = "^1.0.0"
+
+    [tool.poetry.scripts]
+    grascanning = "GRAS.main:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
